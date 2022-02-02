@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Toogle Class</title>
+</head>
+<body>
+	<span class="a b">classList is 'a b'</span>
+
+	<script type="text/javascript">
+		const span = document.querySelector("span");
+		const classes = span.classList;
+
+		span.addEventListener('click', function() {
+			const result = classes.toggle("c");
+
+			if (result) {
+				span.textContent = `'c' added; classList is now "${classes}".`;
+			} else {
+				span.textContent = `'c' removed; classList is now "${classes}".`;
+			}
+		})
+	</script>
+
+
+
+</body>
+</html>

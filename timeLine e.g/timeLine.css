@@ -1,0 +1,170 @@
+/* * {
+    margin: 0;
+} */
+
+.containerList {
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+.divListTime h4 {
+    padding: 10px 0 10px 0;
+    color: #f93195;
+}
+
+
+/* cubetBullet Bottom InicalState  */
+
+.containerList * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.listTimeLine {
+    position: relative;
+}
+
+.divListTime {
+    padding: 2em 2em 0 2em;
+    position: relative;
+    top: -1.875em;
+    left: 4em;
+    width: 60%;
+}
+
+.unList {
+    position: relative;
+    list-style: none;
+}
+
+.unList:before {
+    background-color: black;
+    content: '';
+    margin-left: -1px;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 2px;
+    height: 100%;
+}
+
+
+/*----------cubetBullet Inical State----------*/
+
+.cubeBullet {
+    transform: rotate(45deg);
+    background-color: black;
+    outline: 10px solid white;
+    display: block;
+    margin: 0.5em 0.5em 0.5em -0.5em;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 16px;
+    height: 16px;
+}
+
+
+/* cubeBullet Animate  after hover off*/
+
+.spin {
+    animation: roll 2s linear;
+    animation-direction: reverse;
+    animation-iteration-count: 0.25;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(360deg);
+    }
+    50% {
+        background-color: #f93195;
+    }
+    100% {
+        transform: rotate(0deg);
+        background-color: #f93195;
+    }
+}
+
+
+/* cubeBullet Animate  after hover on*/
+
+.listTimeLine:hover .spin {
+    background-color: #f93195;
+    animation-name: spin;
+    animation-duration: 2s;
+    /* animation-iteration-count: 0.125; */
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*----------Inical State Heading----------*/
+
+.headingContainer {
+    position: relative;
+}
+
+.headingContainer a {
+    display: block;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+.headingHover {
+    position: relative;
+    z-index: 20;
+    background: black;
+    color: #f93195;
+    transition: all 0.35s cubic-bezier(1, 0, 0, 1);
+}
+
+
+/* inicialState to fill heading */
+
+.headingHover::before,
+.headingHover::after {
+    position: absolute;
+    z-index: -1;
+    background: #f93195;
+    transition: all 0.35s cubic-bezier(1, 0, 0, 1);
+    content: '';
+}
+
+
+/*Desde Donde Rellenar*/
+
+.headingHover::after {
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+
+
+/* headingHover hover ON*/
+
+.listTimeLine:hover .headingHover {
+    color: white;
+}
+
+.listTimeLine:hover .headingHover::after {
+    width: 100%;
+    transition-duration: 2s;
+    transition-delay: 0.25s;
+    transition-timing-function: linear;
+}

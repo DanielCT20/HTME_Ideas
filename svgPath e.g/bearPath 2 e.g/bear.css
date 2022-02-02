@@ -1,0 +1,26 @@
+.containerBear {
+    width: 200px;
+    height: 200px;
+}
+
+.border1 {
+    fill: #ccc;
+    stroke: none
+}
+
+#allBear path {
+    fill: #f4f4f4;
+    stroke: none;
+}
+
+
+/* ----------oneStroke---------- */
+
+.pathClass {
+    fill: none;
+    stroke: rgb(74, 74, 74);
+    stroke-width: 0.5px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-opacity: 1;
+}

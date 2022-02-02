@@ -1,0 +1,30 @@
+
+#target{
+    background-color: rgb(233, 238, 227);
+    width: 300px;
+    height: 200px;
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+
+#notification{
+    border: 1px solid red;
+}
+
+
+.error_icon{
+    background-color: rgb(209, 200, 218);
+    text-align: center;
+}
+
+.error_body{
+    color:blue;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+
+.error_action{
+    color: brown;
+}

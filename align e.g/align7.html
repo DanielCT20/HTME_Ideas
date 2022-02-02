@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div style="width: 100%; height: 300px">
+  <!-- The Y axis -->
+  <svg style="width: 40px; height: calc(100% - 20px); float: left;">
+    <g class="yaxis">
+      <line x1="99%" x2="99%" y1="0%" y2="100%" stroke="black" vector-effect="non-scaling-stroke"></line>
+      <g class="tick tick-yaxis">
+        <text x="99%" y="100%" text-anchor="end">$0.0</text>
+        <line x1="98%" x2="100%" y1="100%" y2="100%" stroke="black"></line>
+      </g>
+      <!-- ... -->
+      </g>
+    </g>
+  </svg>
+  <!-- The actual chart -->
+  <svg viewBox="0 0 100 100" preserveAspectRatio="none" style="width: calc(100% - 40px); height: calc(100% - 20px); float: left;">
+    <polyline points="0,50 45.46574414322495,0 65,100 75,100 89.52839708894965,0 91.10141646672459,100 98.21939424857649,0 100,100"
+    vector-effect="non-scaling-stroke" stroke="red" fill="none"></polyline>
+  </svg>
+  <!-- x axis -->
+  <svg style="clear: both; margin-left: 40px; width: calc(100% - 40px); height: 20px;">
+    <g class="xaxis">
+      <line x1="0%" x2="100%" y1="1%" y2="1%" stroke="black" vector-effect="non-scaling-stroke"></line>
+      <g class="tick tick-xaxis">
+        <text x="5%" y="100%" text-anchor="middle">28 Feb 2011</text>
+        <line x1="5%" x2="5%" y1="94%" y2="96%" stroke="black"></line>
+      </g>
+  </svg>
+</div>
+</body>
+</html>

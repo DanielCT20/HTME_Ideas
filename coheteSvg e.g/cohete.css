@@ -1,0 +1,19 @@
+html {
+  min-height: 100vh;
+}
+
+body {
+  background-color: black;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+svg {
+  max-height: 400px;
+}
+
+#rocket {
+  transform-box: fill-box;
+}
+

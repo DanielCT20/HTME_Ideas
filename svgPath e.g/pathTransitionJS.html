@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pathTransitionJS</title>
+	<style type="text/css">
+		.container{
+			background-color: yellow;
+			width: 500px;
+			/*height: 500px;*/
+		}
+		.ball{
+			background-color: red;
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+		}
+
+		svg {
+			background-color:  coral;
+			/*padding: 10px;*/
+		}
+
+		svg path{
+
+			fill: transparent;
+			stroke: blue;
+			stroke-width:2;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+
+
+</head>
+<body>
+	<div class="boxSvg">
+		
+			
+		<svg class="pendiente"viewbox="5.778 86.724 300 80">
+			
+				
+
+			<!-- <path d="m 5.8573085,159.52552 c 14.8283295,-11.07549 35.2865235,-14.1509 52.7157765,-7.92459 8.06408,2.88076 15.460989,7.5917 23.773783,9.64733 11.032683,2.72822 22.729062,0.52624 33.460162,-3.21633 10.7311,-3.74257 20.89218,-8.9953 31.65933,-12.63286 23.50024,-7.93929 49.53879,-8.08373 71.66589,-19.29466 10.94562,-5.54572 20.7862,-13.7349 32.73202,-16.53829 3.3092,-0.77659 6.70676,-1.11653 10.02862,-1.83704 3.32186,-0.72051 6.63843,-1.86399 9.26605,-4.02026 1.69436,-1.39042 3.04021,-3.14975 4.5586,-4.730444 1.51839,-1.580695 3.30085,-3.031819 5.43326,-3.538703 1.47077,-0.349609 3.02155,-0.224834 4.49181,0.126928 1.47026,0.351762 2.87678,0.923953 4.28401,1.47632 1.40722,0.552368 2.8308,1.089615 4.31697,1.366574 1.48616,0.276959 3.05121,0.282947 4.47914,-0.21344 1.10378,-0.383704 2.10253,-1.065012 2.86251,-1.952701 0.75998,-0.887689 1.27926,-1.979487 1.4883,-3.129211 0.20904,-1.149725 0.10731,-2.354433 -0.29156,-3.452824 -0.39888,-1.098391 -1.09388,-2.087653 -1.99196,-2.835333"> -->
+		</svg>
+
+		<svg class="curvas"viewBox="0 0 581 98">
+			<!-- <path   d="M62.9 14.9c-25-7.74-56.6 4.8-60.4 24.3-3.73 19.6 21.6 35 39.6 37.6 42.8 6.2 72.9-53.4 116-58.9 65-18.2 191 101 215 28.8 5-16.7-7-49.1-34-44-34 11.5-31 46.5-14 69.3 9.38 12.6 24.2 20.6 39.8 22.9 91.4 9.05 102-98.9 176-86.7 18.8 3.81 33 17.3 36.7 34.6 2.01 10.2.124 21.1-5.18 30.1"/> -->
+		</svg>
+		
+		<svg class="line" viewBox="0 0 100 4">
+			<path d="m0 0 h100">
+		</svg>
+		
+
+	</div>
+
+		<div class="ball"></div>
+
+<script type="text/javascript">
+	var path = document.querySelector('.boxSvg path');
+	var length = path.getTotalLength();
+	
+	// path.style.transition = path.style.WebkitTransition = 'none';
+	path.style.transition = 'none';
+	
+	path.style.strokeDasharray = length ;
+	path.style.strokeDashoffset =length;
+	
+	path.getBoundingClientRect();
+	
+	// path.style.transition = path.style.WebkitTransition ='stroke-dashoffset 2s ease-in-out';
+	path.style.transition ='stroke-dashoffset 8s ease-in-out';
+	
+
+	path.style.strokeDashoffset = 0;
+</script>
+
+</body>
+
+
+
+</html>

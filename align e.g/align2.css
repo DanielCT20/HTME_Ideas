@@ -1,0 +1,40 @@
+/*.*{
+	margin: 0px;
+}*/
+
+*{
+	margin:0;
+}
+
+.abuelo {
+	padding: 45px 30px;
+    width: 20.22%;
+    position: fixed;
+    /*margin: 30px;*/
+    bottom: 30px;
+    top: 30px;
+    left: 30px;
+    background-color: #00695c;
+}
+
+.padre{
+	background-color: #c6ce00;
+	text-align: center;
+	padding: 30px;
+	position: relative;
+}
+
+.hijo1{
+	background-color: yellow;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+ 	
+}
+
+.hijo2{
+	background-color: blue;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notificationt</title>
+    <link rel="stylesheet" href="notificationt.css">
+</head>
+<body>
+    <template id="notification">
+            <div id="target">
+            <p class="error_icon">
+                ICON
+            </p>
+            <div class="error_body">
+                <p class="error_title">Error de Guardado</p>
+                <p>Tenemos problemas de comunicacion de los servidores</p>
+                <p><button class="error_action">Intentatr otra vez</button></p>
+            </div>
+        </div> 
+    </template>
+    <x-notification></x-notification>  
+    <script src="notificationt.js"></script>
+</body>
+</html>

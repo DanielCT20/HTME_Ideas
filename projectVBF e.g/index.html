@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venobox</title>
+
+    <!-- venobox css -->
+    <link rel="stylesheet" href="./assets/venobox/venobox.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+
+    <!-- project -->
+    <section id="project" class="project py-5">
+        <div class="containerProject">
+            <!-- section title -->
+            <div class="row">
+                <div class="col-10 mx-auto col-sm-6 text-center">
+                    <h1 class="text-capitalize">My <strong class="banner-title ">projects</strong></h1>
+                </div>
+            </div>
+            <!-- end of section title -->
+
+            <!--filter buttons -->
+            <div class="row">
+                <div class=" col-lg-10 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+                    <a href="#" class="btn btn-outline-danger btn-black text-uppercase filter-btn m-2" data-filter="all"> all</a>
+                    <a href="#" class="btn btn-outline-danger btn-black text-uppercase filter-btn m-2" data-filter="softwares">software</a>
+                    <a href="#" class="btn btn-outline-danger btn-black text-uppercase filter-btn m-2" data-filter="ventilacion">ventilation</a>
+                    <a href="#" class="btn btn-outline-danger btn-black text-uppercase filter-btn m-2" data-filter="programacion">programming
+                    </a>
+                    <a href="#" class="btn btn-outline-danger btn-black text-uppercase filter-btn m-2" data-filter="machineLearning">ML</a>
+                    <a href="#" class="btn btn-outline-danger btn-black text-uppercase filter-btn m-2" data-filter="simulacion">simulation</a>
+                </div>
+            </div>
+
+            <!-- search box -->
+
+            <div class="headerSearch">
+                <div class="search-wrapper">
+                    <input type="search" id="search" placeholder="Search..">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="">
+                        <span class="iconify" data-icon="mdi:magnify"></span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </div>
+
+            <!--end of filter buttons -->
+
+
+
+            <!-- project  items-->
+            <div class="row cards" id="project-items">
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href=".linkPage" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">MinePlan</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/minePlan.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="linkPage" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">MinePlan</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/minePlan.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href=".datamine3" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Datamine Studio 3</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/studio3Variogram.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="datamine3" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Datamine Studio 3</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/studio3Variogram.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href=".studioRM" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Studio RM</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/studioRM_CounterFromPoint.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="studioRM" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Studio RM</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/studioRM_CounterFromPoint.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href=".datamineEM" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Datamine EM</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/Studio-EM.jpg" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="datamineEM" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Datamine EM</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/Studio-EM.jpg" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href=".supervisor" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">supervisor</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/supervisor.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="supervisor" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">supervisor</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/supervisor.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href=".studioOP" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Studio OP</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/ModelBlockOpenPit.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="studioOP" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Studio OP</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/ModelBlockOpenPit.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href=".studioUG" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Studio UG</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/studioUG.jpg" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="studioUG" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Studio UG</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/studioUG.jpg" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href=".datamineNPV" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Datamine NPV</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/npv.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="datamineNPV" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Datamine NPV</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/npv.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href=".vulcan" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Vulcan</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/vulcan.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="vulcan" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Vulcan</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/vulcan.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href=".Whittle" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Whittle</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/whittle.jpg" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="Whittle" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Whittle</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/whittle.jpg" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item ventilacion" data-item="xxx">
+                    <a href=".VentSim" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">VentSim</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/VentSim.jpg" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="VentSim" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">VentSim</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/VentSim.jpg" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item ventilacion" data-item="xxx">
+                    <a href=".Vuma" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Vuma</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/Vuma.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="Vuma" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Vuma</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/Vuma.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item programacion" data-item="xxx">
+                    <a href=".Python" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Python</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/Python.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="Python" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Python</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/Python.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item programacion" data-item="xxx">
+                    <a href=".R" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">R</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/R.jpeg" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="R" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">R</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/R.jpeg" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item machineLearning" data-item="xxx">
+                    <a href=".MachineLearning" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Machine Learning</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/MachineLearning.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="MachineLearning" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Machine Learning</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/MachineLearning.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+                <!-- ---------------- start Card design ---------------- -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item simulacion" data-item="xxx">
+                    <a href=".Simulacion" class="venobox containerAA" data-vbtype="inline" data-gall="vbLink">
+                        <div class="A ">
+                            <div class="card cardDesign cardscss ">
+                                <div class="card-body">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Simulacion</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/Simulacion.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- -------------------- Modify Venobox --------------------- -->
+                    <div class="Simulacion" style="display: none;" data-item="xxx">
+                        <div class="A ">
+                            <div class="">
+                                <div class="">
+                                    <div class="card-text d-flex justify-content-center text-capitalize">
+                                        <h5 id="project-item-name">Simulacion</h5>
+                                    </div>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./project/projectImg/Simulacion.png" class="card-img-top project-img " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------- end card design ----------------- -->
+
+
+
+
+
+
+
+
+
+            </div>
+    </section>
+
+
+
+
+
+    <!-- --------------------- Venobox --------------------- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/venobox/venobox.min.js"></script>
+    <script src="./script.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

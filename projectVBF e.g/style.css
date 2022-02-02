@@ -1,0 +1,111 @@
+/* ---------------- Venobox stlyle inline --------------- */
+
+.vbox-inline {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 8px;
+}
+
+.vbox-container {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.vbox-figlio {
+    box-shadow: none;
+}
+
+
+/* --------------------- containerA --------------------- */
+
+
+/* 
+.containerGeneral {
+    width: 100vh;
+    height: 100vw;
+}
+
+.containerA {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* --------------------- projectItem -------------------- */
+
+.project-item:hover a {
+    text-decoration: none;
+}
+
+.cardDesign {
+    background-color: white;
+    padding: 10px;
+}
+
+.card-body {
+    background-color: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cardDesign:hover .card-body {
+    color: white;
+    background-color: crimson;
+    border: 1px solid crimson;
+    border-radius: 1.5px;
+    transition-duration: 4s;
+}
+
+.project-img {
+    width: 100%;
+    height: 150px;
+    border: 2px solid none;
+}
+
+#project-item-name {
+    color: crimson;
+}
+
+.cardDesign:hover #project-item-name {
+    color: white;
+}
+
+
+/* ----------------- project Search Card ---------------- */
+
+.headerSearch {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.headerSearch .search-wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.headerSearch input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    transition: border .3s;
+}
+
+.headerSearch input:focus {
+    outline: none;
+    border: 1px solid #666;
+}
+
+.cardscss.search-hide {
+    box-shadow: none;
+    opacity: 0.2;
+}

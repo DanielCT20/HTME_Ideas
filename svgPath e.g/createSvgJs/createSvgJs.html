@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>createSvgJs</title>
+	<style type="text/css">
+		/*svg{border:1px solid}
+
+		path{fill:none; stroke:black;}*/
+	</style>
+</head>
+<body>
+	<div id="divPadre"></div>
+
+	<script type="text/javascript">
+		const SVG_NS = 'http://www.w3.org/2000/svg';
+		const SVG_XLINK = "http://www.w3.org/1999/xlink";
+
+
+		let svg = document.createElementNS(SVG_NS, 'svg');
+		svg.setAttributeNS(null, "viewBox", "0 0 200 100")
+		svg.style.border="1px solid black"
+		svg.style.backgroundColor="yellow"
+		divPadre.appendChild(svg);
+
+
+
+		// let symbol = document.createElementNS(SVG_NS, 'symbol');
+		// svg.appendChild(symbol);
+
+
+		let trazado = document.createElementNS(SVG_NS, 'path');
+		trazado.setAttributeNS(null, "d", "M25,25 L175,75");
+		trazado.setAttributeNS(null,"id","trazado")
+2
+		trazado.setAttributeNS(null,"stroke","black")
+		trazado.setAttributeNS(null,"fill","none")
+		// symbol.appendChild(trazado);
+		svg.appendChild(trazado);
+
+
+		// let use = document.createElementNS(SVG_NS, 'use');
+		// use.setAttributeNS(SVG_XLINK, 'xlink:href', '#trazado');
+		// svg.appendChild(use);
+
+
+	</script>
+
+</body>
+</html>

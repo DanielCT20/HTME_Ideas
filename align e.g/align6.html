@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		* {
+			margin:0;
+		}
+
+		.aside{
+			background-color: red;
+			position: fixed;
+			width:22%;
+			left: 30px;
+			top:30px;
+			bottom: 30px;
+			padding: 10px;
+		/*	display: flex;
+			flex-direction: column;*/
+			
+		}
+		
+
+		.container{
+			background-color: violet;
+			height: 20%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		.child0{
+			height: 100px;
+			width: 100px;
+		}
+
+		.profile_img{
+			height: 100%;
+			width: 100%;
+			border-radius: 50%;
+			border: 3px solid red;
+		}
+
+		.container_1{
+			background-color: blue;
+			opacity: 0.9;
+		}
+
+		.box{
+			background-color: chartreuse;
+			height: 80%;
+			text-align: center;
+		}
+
+
+		@media  (max-height: 600px) 
+		{
+		.aside {display: none;}
+		}
+	</style>
+</head>
+
+<body>
+	<aside class="aside">
+		<div class="container">
+			<div class="child0" >
+				<img class="profile_img"src="rueda-de-color.jpg">
+			</div>
+		</div>	
+	
+		<div class="box">
+			daniel
+		</div>
+	</aside>
+</body>
+</html>
+	
+<!-- 	/* margin arriba rigth abajo left*/ -->

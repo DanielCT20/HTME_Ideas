@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+.bearcontainer {
+    /* background-color: yellow; */
+    width: 600px;
+    height: 600px;
+    padding: 10px;
+}
+
+.container svg {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.pathClass {
+    /* stroke: rgb(74, 74, 74); */
+    stroke-width: 1.1;
+    fill: none;
+}

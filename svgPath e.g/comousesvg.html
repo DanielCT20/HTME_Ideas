@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>howUseSvg</title>
+<!-- 
+	http://w3.unpocodetodo.info/svg/utilizar-svg.php
+	https://codepen.io/enxaneta/pen/760e7c4ff43745d1538fa9153b435a27 -->
+
+	<style type="text/css">
+		html,
+		body {
+			background-color: #333
+		}
+
+		img,div,
+		object,iframe,embed,svg {
+			border: 1px solid #222;
+			width: 106px;
+			height: 122px;
+			display: inline-block;
+			margin:1em;
+			padding:1em;
+			color:white;
+		}
+
+		div.bcg {
+			background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/apple.svg);
+			background-repeat: no-repeat;
+			background-position:center center;
+		}
+
+		.data-uri-unencoded{ background-image:
+			url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='106px' height='122px' viewBox='41 54 106 122'%3E%3Cg%3E%3Cpath fill='%23FFFFFF' stroke='%23ED1D24' stroke%2Dwidth='2' stroke%2Dmiterlimit='10' d='M143.099,93.757c0,0%2D14.173,8.549%2D13.724,23.173 c0.449,14.624,11.954,23.413,15.974,24.073c1.569,0.258%2D9.245,22.049%2D15.984,27.448c%2D6.74,5.4%2D13.714,6.524%2D24.513,2.25c%2D10.8%2D4.275%2D18.449,0.275%2D24.749,2.612c%2D6.299,2.337%2D13.949%2D0.137%2D24.298%2D14.987c%2D10.349%2D14.849%2D21.823%2D49.271%2D6.074%2D66.146c15.749%2D16.874,33.298%2D10.124,38.022%2D7.875c4.725,2.25,13.05,2.025,22.499%2D2.25C119.7,77.782,138.374,86.782,143.099,93.757z'/%3E%3C/g%3E%3Cg%3E%3Cpath fill='%23FFFFFF' stroke='%23ED1D24' stroke%2Dwidth='2' stroke%2Dmiterlimit='10' d='M118.575,54.609c0,0,0.9,5.625%2D1.35,10.349s%2D10.718,20.936%2D22.994,17.999c%2D0.308%2D0.073%2D2.102%2D5.506,0.532%2D11.027C98.48,64.138,108.171,55.399,118.575,54.609z'/%3E%3C/g%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+			background-position:center center;
+		}
+	</style>
+</head>
+<body>
+	<!--img-->
+	<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/apple.svg" alt="svg image" />
+
+	<!-- background img-->
+	<div class="bcg"></div>
+
+	<!-- data uri -->
+	<div class="data-uri-unencoded"></div>
+
+	<!--object-->
+	<object type="image/svg+xml" data="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/apple.svg" >
+		<!-- solución alternativa (fallback) -->
+		<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/apple.png" alt="apple" />
+	</object>
+
+
+	<!--iframe-->
+	<iframe src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/apple.svg" >
+		<!-- solución alternativa (fallback)  -->
+		<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/apple.png" alt="apple" />
+	</iframe>
+	<!--embed-->
+	<embed type="image/svg+xml" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/apple.svg" />
+	<!--SVG-->
+	<svg 
+	width="106px" height="122px" viewBox="41 54 106 122" data-tooltip="inline SVG">
+	<g>
+		<path fill="#FFFFFF" stroke="#ED1D24" stroke-width="2" stroke-miterlimit="10" d="M143.099,93.757c0,0-14.173,8.549-13.724,23.173 c0.449,14.624,11.954,23.413,15.974,24.073c1.569,0.258-9.245,22.049-15.984,27.448c-6.74,5.4-13.714,6.524-24.513,2.25c-10.8-4.275-18.449,0.275-24.749,2.612c-6.299,2.337-13.949-0.137-24.298-14.987c-10.349-14.849-21.823-49.271-6.074-66.146c15.749-16.874,33.298-10.124,38.022-7.875c4.725,2.25,13.05,2.025,22.499-2.25C119.7,77.782,138.374,86.782,143.099,93.757z"/>
+	</g>
+	<g>
+		<path fill="#FFFFFF" stroke="#ED1D24" stroke-width="2" stroke-miterlimit="10" d="M118.575,54.609c0,0,0.9,5.625-1.35,10.349
+		s-10.718,20.936-22.994,17.999c-0.308-0.073-2.102-5.506,0.532-11.027C98.48,64.138,108.171,55.399,118.575,54.609z"/>
+	</g>
+</svg>	
+</body>
+</html>

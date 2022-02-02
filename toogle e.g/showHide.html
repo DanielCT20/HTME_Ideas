@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ShowHide</title>
+	<style type="text/css">
+		.show {
+			display: block;
+		}
+
+
+		.hide {
+			display: none;
+		}
+
+	</style>
+
+</head>
+<body>
+	
+	<a href="#" id="togglebutton" onclick="toggle()">Show/hide</a>
+
+	<div id="MyId" class="hide"> 
+		I want this div to toggle between the 'show' class and the 'hide' class
+	</div>
+
+	<script>
+
+		function toggle(){
+			if(document.getElementById("MyId").className == "hide")
+				document.getElementById("MyId").className = "show";
+			else
+				document.getElementById("MyId").className = "hide";
+		}
+
+
+	</script>
+
+</body>
+</html>

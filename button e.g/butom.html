@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="stylebuttom.css" rel="stylesheet" type="text/css">
+	<title>Botones</title>
+
+</head>
+<body>
+	<form action="" method="get">
+		<h1>Botones </h1>
+		<input type="text" name="nome">
+		<button type="submit" class="boton_form"name="boton">Execute</button>	
+	</form>
+
+	<h1>BOTON A</h1>
+	<a href="destino.html" class="boton_a">Enviar link</a>
+	
+	<h1>BOTON TAG</h1>
+	<p id ="btn" class="botn_tag">ENVIAR LINK</p>
+	<script>
+		document.getElementById("btn").addEventListener("click",e=>{
+			window.location.href="destino.html"
+		})
+
+	</script>
+
+	<style >
+		.boton_form{
+			padding: 10px 20px;
+/*			background-color: blueviolet*/;
+			color:white;
+			border-radius: 4px;
+			border:none;
+			cursor: pointer;
+			text-align: center;
+			background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+	
+		}
+		.boton_a{padding: 10px 20px;
+			background-color: blueviolet;
+			color:white;
+			border-radius: 4px;
+			border:none;
+			cursor: pointer;
+		}
+		.botn_tag{padding: 10px 20px;
+			background-color: blueviolet;
+			color:white;
+			border-radius: 4px;
+			border:none;
+			cursor: pointer;
+			width: 200px;
+		}
+
+
+
+	</style>
+
+</body>
+</html>

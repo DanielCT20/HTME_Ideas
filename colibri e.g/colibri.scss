@@ -1,0 +1,72 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  background-color: #F6F6F4
+}
+
+$duration: 2.4s;
+
+#logo {
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  display: block;
+  animation-duration: $duration;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+}
+
+.body {
+  fill: rgba(33, 33, 33, 1.0);  
+
+}
+
+.wing {
+  fill: rgba(33, 33, 33, 0.7);
+  animation-duration: $duration;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+/*   animation-direction: alternate; */
+}
+
+
+
+@for $i from 1 through 6 {
+  .wing:nth-child(#{$i}){
+    animation-name: pulse#{$i};
+  }
+}
+
+$end-delay: 10;
+$unit: (100 - $end-delay) / 18;
+$parfade: 0.4;
+$finalfade: 0.1;
+
+@keyframes bounce {
+  0% { transform: translateY(0px); }
+  #{9 * $unit * 1%} { transform: translateY(8px); }
+}
+
+@for $j from 1 through 6 {
+  @keyframes pulse#{$j} {
+    0%, 100% { opacity: 0; }
+    #{($j * $unit) * 1%} { opacity: 0; }
+    #{(($j + 1) * $unit) * 1%} { opacity: 1; }
+    #{(($j + 3) * $unit) * 1%} { opacity: $parfade; }
+    
+    @if($j != 6) {
+      #{((8 * $unit) + ((5 - $j) * $unit) + $unit) * 1% } {
+        opacity: #{$parfade - ((6 - $j)/5 * ($parfade - $finalfade))};
+      }
+    }
+    
+    #{(((6 - $j) + 9) * $unit) * 1%} { opacity: 1; }
+    #{(((6 - $j) + 10) * $unit) * 1%} { opacity: 0.3; }
+    #{(((6 - $j) + 13) * $unit) * 1%} { opacity: 0; }
+  }
+}

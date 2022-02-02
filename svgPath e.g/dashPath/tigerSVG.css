@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+.tiger {
+    background-color: blueviolet;
+    padding: 30px;
+    height: 300px;
+    width: 300px;
+}
+
+.tiger svg{
+    background-color: blanchedalmond;
+    padding: 5%;
+    width: 90%;
+    height: 90%;
+    fill: transparent;
+    stroke: black;
+    stroke-width: 4;
+}
+
+.tiger svg path{
+    stroke-dasharray: 2387;
+    stroke-dashoffset:2387;
+
+}
+
+.tiger svg :hover path{
+    animation: animate-tiger 10s ease-in forwards ;
+} 
+
+
+@keyframes animate-tiger {
+    /* 0%{
+        stroke-dashoffset: 2387;
+        stroke: blueviolet;
+    } */
+    25%{
+        stroke-dashoffset: 4774;
+        stroke: red;
+    }
+    80%{
+        stroke-dashoffset: 2387;
+        stroke: greenyellow;
+    }
+    100%{
+        stroke-dashoffset: 4774;
+        stroke: blue;
+    }
+}

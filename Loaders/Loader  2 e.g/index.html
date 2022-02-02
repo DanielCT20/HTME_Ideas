@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Vtg agency preloader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="page-preloader">
+	<p class="page-preloader__text">vintage</p>
+	<div class="page-preloader__animation">
+
+	</div>
+	<div class="page-preloader__progress-bar page-preloader__progress-bar_top">
+		<div class="rect"></div>
+	</div>
+	<div class="page-preloader__progress-bar page-preloader__progress-bar_bottom">
+		<div class="rect"></div>
+	</div>
+	<div class="page-preloader__drop-line"></div>
+</div>
+<div class="landscape-splash">
+	<div class="landscape-splash__message">
+		<svg class="svg svg-loading ico">
+            <use xlink:href="<%= Routes.static_path(@conn, "/images/sprite.svg#loading") %>"></use>
+        </svg>
+		<p>Rotate your screen</p>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.1/gsap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

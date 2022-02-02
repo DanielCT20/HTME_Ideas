@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardFilter</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="cfilter1.css">
+</head>
+
+<body>
+    <!-- project -->
+    <section id="project" class="project py-5">
+        <div class="container">
+            <!-- section title -->
+            <div class="row">
+                <div class="col-10 mx-auto col-sm-6 text-center">
+                    <h1 class="text-capitalize">My <strong class="banner-title ">projects</strong></h1>
+                </div>
+            </div>
+            <!-- end of section title -->
+
+            <!--filter buttons -->
+            <div class="row">
+                <div class=" col-lg-10 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+                    <a href="#" class="btn btn-outline-danger btn-black text-uppercase filter-btn m-2" data-filter="all"> all</a>
+                    <a href="#" class="btn btn-outline-danger btn-black text-uppercase filter-btn m-2" data-filter="softwares">software</a>
+                    <a href="#" class="btn btn-outline-danger btn-black text-uppercase filter-btn m-2" data-filter="ventilacion">ventilation</a>
+                    <a href="#" class="btn btn-outline-danger btn-black text-uppercase filter-btn m-2" data-filter="programacion">programming
+                    </a>
+                    <a href="#" class="btn btn-outline-danger btn-black text-uppercase filter-btn m-2" data-filter="machineLearning">ML</a>
+                    <a href="#" class="btn btn-outline-danger btn-black text-uppercase filter-btn m-2" data-filter="simulacion">simulation</a>
+                </div>
+            </div>
+
+            <!-- search box -->
+
+            <!--end of filter buttons -->
+
+
+
+            <!-- project  items-->
+            <div class="row" id="project-items">
+
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign ">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">MinePlan</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/minePlan.png" class="card-img-top project-img " alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">Datamine Studio3</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/studio3Variogram.png" class="card-img-top project-img" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">StuioRM</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/studioRM_CounterFromPoint.png" class="card-img-top project-img" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">DatamineEM</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/Studio-EM.jpg" class="card-img-top project-img" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">Supervisor</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/supervisor.png" class="card-img-top project-img" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">Studio OP</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/ModelBlockOpenPit.png" class="card-img-top project-img" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">Studio UG</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/studioUG.jpg" class="card-img-top project-img" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">Datamine NPV</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/npv.png" class="card-img-top project-img" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">Vulcan</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/vulcan-corto-plazo.png" class="card-img-top project-img" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item softwares" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">Whittle</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/whittle.jpg" class="card-img-top project-img" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item ventilacion" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">VentSim</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/ventsim.jpg" class="card-img-top project-img" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item ventilacion" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">Vuma</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/Vuma.png" class="card-img-top project-img" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item programacion" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">Python</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/pythonscattereplotpng.png" class="card-img-top project-img" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item programacion" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">R</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/cluster.jpeg" class="card-img-top project-img" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item machineLearning" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">Machine Learning</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/clustML.png" class="card-img-top project-img" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 project-item simulacion" data-item="xxx">
+                    <a href="">
+                        <div class="card cardDesign">
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-center text-capitalize">
+                                    <h5 id="project-item-name">Simulacion</h5>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <img src="imgProject/Simulacion.png" class="card-img-top project-img" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end of single project item-->
+
+            </div>
+    </section>
+    <!--end of project items -->
+
+    <script type="text/javascript" src="cfilter1.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

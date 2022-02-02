@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+}
+
+body {
+    scrollbar-width: thin;
+    /* scrollbar-color: blue orange; */
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+
+/* -------------------- changeNav Bar ------------------- */
+
+
+/* https://www.digitalocean.com/community/tutorials/css-scrollbars-es */
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(101, 110, 105);
+    border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #dc143c;
+    border: 3px solid rgb(101, 110, 105);
+}
+
+
+/* ----------------- End Navigation Bar ----------------- */
+
+.navContainer {
+    background-color: transparent;
+    position: fixed;
+    z-index: 50;
+    /* width: 180px;
+    height: 200px; */
+    left: 40px;
+    bottom: 40px;
+    padding: 10px;
+    /* height: 150px; */
+}
+
+.dinav {
+    background-color: #dc143d;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
+
+.dinav:hover {
+    color: #dc143c;
+    background-color: white;
+    border: 2px solid #dc143c;
+}
+
+.dnav {
+    position: absolute;
+    bottom: 50px;
+    /* padding: 10px; */
+    /* background-color: red; */
+}
+
+.navbar {
+    background-color: transparent;
+    padding: 10px;
+}
+
+.listnav {
+    list-style: none;
+    width: 120px;
+    padding: 5px;
+}
+
+.navunlist {
+    padding: 0;
+}
+
+.listnav a {
+    text-decoration: none;
+    color: #dc143c;
+}
+
+
+/* --------------------- displa nav --------------------- */
+
+.nav-menu {
+    /* background-color: blueviolet; */
+    padding: 10px;
+    display: none;
+}
+
+.listnav:hover a {
+    color: blueviolet;
+}
+
+.navname {
+    padding-left: 10px;
+}
+
+
+/* ---------------------- secciones --------------------- */
+
+.sectionA {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconPAGE {
+    /* color: red; */
+    width: 200px;
+    height: 200px;
+}
+
+#home {
+    color: #dc143c;
+}
+
+#aboutme {
+    color: chartreuse;
+}
+
+#skills {
+    color: skyblue;
+}
+
+#project {
+    color: blue;
+}
+
+#academics {
+    color: yellow;
+}
+
+#contactme {
+    color: purple;
+}

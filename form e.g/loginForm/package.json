@@ -1,0 +1,15 @@
+{
+  "name": "package-lock",
+  "version": "1.0.0",
+  "description": "creacion de css bs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "daniel caso",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "venobox": "^2.0.4"
+  }
+}

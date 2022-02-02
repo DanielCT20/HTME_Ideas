@@ -1,0 +1,53 @@
+/* ---------------- Venobox stlyle inline --------------- */
+
+.vbox-inline {
+    padding: 10px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ----------------------- Venobox ---------------------- */
+
+#pageDisplayNone {
+    display: none;
+}
+
+
+/* ----------------------- content ---------------------- */
+
+* {
+    margin: none;
+}
+
+.containerGeneral {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerA {
+    width: 100vw;
+    height: 40vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerAA {
+    width: ;
+    height: ;
+    background-color: burlywood;
+    margin: 12px;
+}
+
+.A img {
+    width: 200px;
+    height: 150px;
+    box-shadow: 1.6px 3.2px 3.2px hsl(0deg 0% 0% / 0.45);
+}

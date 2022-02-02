@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>3Button</title>
+  
+  <style type="text/css">
+    div {
+      display: flex;
+      justify-content: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: black;
+      color: #fff;
+      border: none;    
+      outline: none;
+      border-radius: 5px;
+    }
+
+    
+  </style>
+
+</head>
+<body>
+
+  <div>
+    <button id="primary">Primary</button>
+    <button id="danger">Danger</button>
+    <button id="success">Success</button>
+  </div>
+
+  <script>
+    let btnPrimary = document.querySelector('#primary');
+    let btnDanger = document.querySelector('#danger');
+    let btnSuccess = document.querySelector('#success');
+
+    btnPrimary.addEventListener('click', () => btnPrimary.style.backgroundColor = '#337ab7')
+    btnDanger.addEventListener('click', () => btnDanger.style.backgroundColor = '#c9302c')
+    btnSuccess.addEventListener('click', () => btnSuccess.style.backgroundColor = '#4cae4c')
+
+  </script>
+</body>
+</html>

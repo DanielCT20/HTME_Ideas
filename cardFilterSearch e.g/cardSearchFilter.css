@@ -1,0 +1,79 @@
+body {
+  background-color: #f4f4f4;
+}
+
+.headerSearch {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.headerSearch .search-wrapper {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.headerSearch input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  -webkit-transition: border .3s;
+  transition: border .3s;
+}
+
+.headerSearch input:focus {
+  outline: none;
+  border: 1px solid #666;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto 5rem;
+  padding: 1rem;
+  background-color: white;
+}
+
+.cardscss {
+  background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 3px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  max-width: calc(100% / 3 - 1rem);
+  -ms-flex-preferred-size: calc(100% / 3 - 1rem);
+      flex-basis: calc(100% / 3 - 1rem);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 1.8px 3.7px 3.7px #6D6D6D;
+          box-shadow: 1.8px 3.7px 3.7px #6D6D6D;
+  opacity: 1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.cardscss.search-hide {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: 0.2;
+}
+/*# sourceMappingURL=cardSearchFilter.css.map */
