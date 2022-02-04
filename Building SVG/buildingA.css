@@ -1,0 +1,41 @@
+*{
+	margin:0;
+}
+
+body{
+	background-color: #f4f4f4;
+}
+
+.container{
+	width: 40%;
+	height: 100vh;
+	background-color: black;
+
+	animation: move 3s ease in
+
+
+}
+
+svg{
+	width:	100%;
+	height: 100px;
+	background-color: white;
+
+}
+
+
+.build{
+	fill:violet;
+	width:	100%;
+	transform:	scale(2.5)
+				translateY(2.1px)
+				translateX(-6px);
+				/*rotate(45deg)*/
+				
+	/*transform: translateY(30px);*/
+	/*transform: translate(10 10);*/
+}
+
+.build:hover{
+	fill: orange;
+}

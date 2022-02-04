@@ -1,0 +1,68 @@
+console.log("hola sin clase")
+document.write("escrito desde java")
+
+class SaludoBasicoElement extends HTMLElement{
+
+	constructor(){
+		super();
+		const myElement = document.createElement("my-element");
+		document.body.append(myElement);
+
+		console.log('Inicializando');
+	}
+
+
+/*	getRandomColor(){
+		document.Write("holacallback");
+	}*/
+
+	connectCallBack(){
+		// this.innerHMTL=`<h1>Hola Amigo saludo interno</h1>`
+	}
+
+	// disconnectCallBack(){
+	// 	console.log("desconectado en la consoal")
+	// }
+
+}
+
+
+// #Java Script es lenguaje basao en eventos
+/*don de heco se basa en eventos click load resize*/
+// conectado cuando metemos un componente en la pag
+// desconectado cuando lo quito
+// atrivuto cambiado
+
+// Los eventos se implemenran con funciones
+
+/*declaracion de etiqueta*/
+/*lugar donde se registran los elemntos con un metod para definir un custom elements*/
+
+customElements.define("my-element",SaludoBasicoElement);
+
+/*OTRAMANER A DELLAMAR*/
+// customElements.define("saludo-basico",SaludoBasicoElement);
+
+
+/*loscustom elemts deben ser de dos palabras separadas por guion
+esta estandarizado
+*/
+
+// define(tag,class o fx)
+
+
+// callback
+// FUncion pasado como parametro a otra funcion
+// https://www.youtube.com/watch?v=DaXuPcdKqQ4
+
+
+
+	<!-- Custom Tags -->
+  	<!-- <my-custom-tag ></my-custom-tag> -->
+  	
+ <!-- Estandar html se reserva solo las etiquetas con un solo nombre mientra si quieres crear tu etiqueta se necesita 2 nombres como minimo -->
+  	
+ <!-- <library-modulo></library-modulo> -->
+
+  	<!-- <saludo-basico></saludo-basico> -->
+  	<!-- sino no hay el tag se comporta como div -->
