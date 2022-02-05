@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoDiv {
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+    transform: rotate(45deg);
+}
+
+.cir1 {
+    visibility: hidden;
+    fill: crimson;
+    animation: cirAn1 2s linear;
+}
+
+.cir2 {
+    visibility: hidden;
+    fill: orange;
+    animation: cirAn1 2s linear;
+}
+
+.cir3 {
+    visibility: hidden;
+    fill: blue;
+    animation: cirAn1 2s linear;
+}
+
+.cir4 {
+    /* visibility: hidden; */
+    fill: yellow;
+    animation: cirAn1 2s linear;
+}
+
+@keyframes cirAn1 {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: hidden;
+    }
+}
+
+.path {
+    fill: white;
+    stroke: crimson;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-dasharray: 80;
+    stroke-dashoffset: 0;
+    animation-delay: 3s;
+    animation: dash 5s linear;
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 80;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.path1 {
+    fill: white;
+    stroke: orange;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-dasharray: 80;
+    stroke-dashoffset: 0;
+    animation-delay: 3s;
+    animation: dash1 5s linear;
+}
+
+@keyframes dash1 {
+    0% {
+        stroke-dashoffset: 80;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.path2 {
+    fill: white;
+    stroke: blue;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-dasharray: 80;
+    stroke-dashoffset: 0;
+    animation-delay: 3s;
+    animation: dash2 5s linear;
+}
+
+@keyframes dash2 {
+    0% {
+        stroke-dashoffset: 80;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.path3 {
+    fill: white;
+    stroke: yellow;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-dasharray: 80;
+    stroke-dashoffset: 0;
+    animation-delay: 3s;
+    animation: dash3 5s linear;
+}
+
+@keyframes dash3 {
+    0% {
+        stroke-dashoffset: 80;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
